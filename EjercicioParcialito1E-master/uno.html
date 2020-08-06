@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+			<!--/estilos-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<!--final de /estilos-->
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="uno.js"></script>
+        <!--Final de Lógica-Programación -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+
+<div class=" animated bounceInRight header">
+     <a  class="MiBotonUTNnav" onclick="location.href='index.html'" ><i class="far fa-hand-point-left"></i>Men&uacute; ejercicios</a> 	
+</div>
+
+<div class="row">
+  <div class="col-6 col-s-9">
+   	<form id="FormIngreso" class=" animated bounceInLeft">
+	   	<h1>Ingrese datos </h1>
+		
+		<input type="text"  placeholder="Nombre y Apellido" id="nombreyapellido">
+		<input type="text"  placeholder="Temperatura Corporal" id="temperatura">		
+		<select id="Sintoma">
+					<option value="Ninguno">Ninguno</option>
+					<option value="Tos">Tos</option>
+					<option value="PerdidaOlfato">Pérdida de olfato</option>
+					<option value="PerdidaGusto">Pérdida de gusto</option>
+					<option value="DificultadParaRespirar">Dificultad para respirar</option>
+					
+		</select>
+	   	<a  class="MiBotonUTNnav" onclick="mostrar()" >Mostrar  informaci&oacute;n</a>
+	 </form>
+  </div>
+
+  <div class="col-6 col-s-12">
+    <div class="aside animated bounceInUp">
+     <h2>Enunciado:</h2>
+	  <h3></br>Para poder sacar el permiso de circulación se deben llenar los siguientes datos:
+			<br> Nombre y apellido (leer desde la página) 
+			<br> Temperatura corporal (leer desde la página, validar que esté entre 35° y 40°, sino informar por alert que es incorrecta) 
+	        <br> Síntomas (leer desde la página)
+	        <br><br>Si la temperatura corporal es mayor o igual a 38, se debe informar "Permiso no otorgado"
+			<br>Si el síntoma es tos y la temperatura es menor o igual a 37, se debe informar "Permiso otorgado. Por favor no se olvide de toser sobre su codo." 
+			<br>Si el síntoma es pérdida de olfato o pérdida del gusto, más allá de la temperatura (siempre que sea correcta y menor a 38), informar "Permiso otorgado"
+			<br>Si el síntoma es dificultad para respirar, más allá de la temperatura (siempre que sea correcta), informar "Permiso no otorgado"
+			<br>Sino informar permiso otorgado. 
+			
+					
+			</h3>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  
+  	
+  	<p>Curso de ingreso UTN FRA</p>
+</div>
+
+</body>
+</html>
