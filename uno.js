@@ -31,9 +31,9 @@ function mostrar() {
 	let sintoma;
 
 
-	temperatura = document.getElementById("temperatura").value;
+	temperatura = parseInt(document.getElementById("temperatura").value);
 	nombreApellido = document.getElementById("nombreyapellido").value;
-	sintoma = document.getElementById("Sintoma");
+	sintoma = document.getElementById("Sintoma").value;
 
 	if (!(temperatura >= 35 && temperatura <= 40)) {
 
@@ -41,29 +41,25 @@ function mostrar() {
 
 
 	}
-	else if(temperatura>=38){
+	else if (temperatura >= 38) {
 		alert("Permiso no otorgado")
 	}
 	else {
 		switch (sintoma) {
 			case "Tos":
-				if (temperatura <= 37) {
-					alert("Permiso otorgado. Por favor no se olvide de toser sobre su codo.")
-				}
-			
+				alert("Permiso otorgado. Por favor no se olvide de toser sobre su codo.");
 				break;
 			case "PerdidaOlfato":
 			case "PerdidaGusto":
-				if(temperatura < 38){
-					alert("Permiso otorgado")
-				}
+				alert("Permiso otorgado");
+
 				break;
-				case "DificultadParaRespirar":
-					alert("Permiso no otorgado")
-					break;
-					case "ninguno":
-					alert("Permiso no otorgado");
-					break;
+			case "DificultadParaRespirar":
+				alert("Permiso no otorgado")
+				break;
+			case "ninguno":
+				alert("Permiso otorgado");
+				break;
 
 		}
 
@@ -71,5 +67,4 @@ function mostrar() {
 
 
 
-	alert("Hola Mundo");
 }
